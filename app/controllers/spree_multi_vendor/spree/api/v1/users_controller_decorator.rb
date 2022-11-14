@@ -10,4 +10,4 @@ module SpreeMultiVendor::Spree::Api::V1::UsersControllerDecorator
   end
 end
 
-Spree::Api::V1::UsersController.prepend SpreeMultiVendor::Spree::Api::V1::UsersControllerDecorator
+Spree::Api::V2::Platform::UsersController.prepend SpreeMultiVendor::Spree::Api::V1::UsersControllerDecorator

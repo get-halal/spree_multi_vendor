@@ -6,4 +6,5 @@ module SpreeMultiVendor::Spree::Api::V1::ProductsControllerDecorator
   end
 end
 
-Spree::Api::V1::ProductsController.prepend SpreeMultiVendor::Spree::Api::V1::ProductsControllerDecorator
+Spree::Api::V2::Platform::ProductsController.prepend SpreeMultiVendor::Spree::Api::V1::ProductsControllerDecorator
+Spree::Api::V2::Storefront::ProductsController.prepend SpreeMultiVendor::Spree::Api::V1::ProductsControllerDecorator
